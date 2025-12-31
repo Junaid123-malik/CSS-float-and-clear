@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+
+    <style>
+        img {
+            float: right;
+        }
+
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card :nth-child(2) {
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3MRBY3CNpxA_zzEl8fdtwP74sASAeH6g1ZQ&s" 
+            alt="" 
+            width="230"
+        >
+
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                At enim harum consequatur doloribus repudiandae dolorum dolore nemo.
+            </p>
+
+            <div class="card">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Iste incidunt, molestiae eveniet doloribus earum quae nisi porro magnam sequi laudantium.
+            </div>
+
+            <div class="card">
+                Card 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>
